@@ -631,14 +631,99 @@ Cada etiqueta HMTL, empiezan con <b>(< y acaba con >)</b>
             <br>
             <button type="submit" name="enviar" value="enviar">Enviar datos</button>
         </form>
-    ````
+```
+### INTRODUCCIÓN A CSS
 
+## CSS: Evolución y función (1/2)
 
+<p>Para que HTML, no sea el responsable de la parte de la estética y la parte que se ve en la WEB, se penso en hacer hojas de estilo y el el lenguaje CSS (Cascading Style sheets)</p>
 
+<p>HTMl seria la estructura del documento, (un vínculo, un título ...) y el CSS da instrucciones al navegador sobre como ha de mostrar un elemento concreto:estilo, espaciado, posición</p>
 
+#### CSS: Ventajas e incovenientes
 
+<p>Posibilidad de mantener el código más facilmente</p>
+<p>En temas de diseño, CSS es más potente que el diseñp de (X) HTML,</p>
+<p>Es un lenguaje de estilo</p>
+<p>Podemos usar diferenetes hojas de estilo para un solo documento</p>
+<p>Se pueden reutilizar diferentes documentos HTML</p>
 
+<p>El principal inconveniente es que no todos los navegadores se comportan de la misma forma ante una hona de estilo</p>
 
+<hr>
 
+## CSS: Ubicación (1/4)
 
+<p>Los estilos se puedn associar en diferentes ubicaciones,a los elementos de HTML</p>
 
+<p> Estilo "inline". En la propia etiqueta</p>
+<p> Estilo "interno" En la cabecera del documento (X) HTML</p>
+<p>Estilo "externo" En un documento externo</p>
+
+<hr>
+
+## CSS: Ubicación (2/4)
+
+<p>En la etiqueta HTML: (estilo "INLINE") Se añaden las propiedades CSS directamente en el elemento usando el atributo "style"</p>
+
+<p> style="text-align:center; color:red">Paràgraf centrat vermell</p>
+
+<hr>
+
+## CSS : Ubicacion (3/4)
+
+<p>En la cabecera del documento (X): (estilo INTERNO) se pueden colocar diferentes propiedades CSS dentro elemento (style) dentro elemento (head) del documento</p>
+
+<hr>
+
+## CSS : Ubicación (4/4)
+<p> En un documento externo, HTML se enlaza a la hoja de estilos con la etiqueta (link) dentro del elemento (head)
+
+````html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="selectores.css">
+    <title>Prueba de selectores CSS</title>
+</head>
+<body>
+</body>
+</html>
+
+<h1>Hoja externa de selectores</h1>
+
+p{
+    color: red !important;
+    font-size: 25px;
+}
+span{
+    font-weight: bold;
+}
+h1,h2, p {
+    color: red;
+    
+}
+````
+## CSS: Prioridad (1/4)
+<p>Puede que varias declaraciones CSS lleguen a afectar de forma diferente a un mismo elemento HTML, por eso cada una tiene preferencia</p>
+
+<p><strong>Lo primero, </strong>es comprobar si existe una hoja de estilos externa asociada al documento HTML (estilo interno)</p> 
+
+<p><strong>En segundo lugar, </strong> Comprobar si hay una definición de estilos en el HEAD del documento HTML (estilo interno), si alguna definición se contradice tendra priorirad el estilo inerno</p>
+
+<P><strong>De final, </strong> si alguna definición de estilos "inline" en la propia etiqueta HTML, en caso de que se contradiza, tendrá prioridad la definida por la etiqueta</P>
+<hr>
+
+## CSS: Prioridad (2/4)
+
+<p><strong>Especifidad: </strong>se calcula en función de un sistema de puntuación basado en las partes del selector</p>
+
+<p><strong>Orden de aparación </strong>si dos selectores tienen la misma especificidad, gana el ultimo archivo CSS o en las hojas vinculadas</p>
+
+<p><strong>Reglas importantes: (Importart) </strong> La regla !important sobreescribe cualquier otra regla, independientemnete de la especifidad</p>
+
+<p><strong>Herencia: </strong> hay propiedades que pueden heredarse, pero tienen menor prioridad que una regla aplicada directamente</p>
+
+## CSS: Sintaxis básica CSS (Estructura 1/3)
