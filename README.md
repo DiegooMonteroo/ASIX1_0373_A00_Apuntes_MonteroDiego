@@ -727,3 +727,46 @@ h1,h2, p {
 <p><strong>Herencia: </strong> hay propiedades que pueden heredarse, pero tienen menor prioridad que una regla aplicada directamente</p>
 
 ## CSS: Sintaxis básica CSS (Estructura 1/3)
+
+<p>Una hoja de estilos es el conjunto de reglas que definen la estética final, cada regla es formada por un selector y un conjunto de declaraciones</p>
+
+<P>Cada declaración es formada por una propiedad y el valor asociado</P>
+
+<p>Los selectors los utilizamos para definir a qué elemento o elementos queremos aplicar las declaraciones de la regla</p>
+
+## CSS: Sintaxis básica CSS (Comentarios)
+
+<p>Como tambien en HTML, en CSS podemos aplicar comentarios, CSS solo tiene comentarios de bloque</p>
+
+````html
+/* Estos son selectores de elementos básicos */
+selector {
+    propiedad1: valor;
+    propiedad2: valor;
+    propiedad3: valor;
+}
+````
+## CSS: Sintaxis básica CSS (Tipos de selectores)
+
+<p>Hay distintos tipos de selectores. Los más básicos son:</p>
+
+1. Selector de elementos (selector de tipo)
+2. Selector de id 
+3. Selector de clase
+
+<p>Selectores avanzados</p>
+
+1. Selector universal
+2. Selector de atributos
+3. Selector de hijos
+4. Selectores de descendientes
+5. Selectores de hermanos adyacentes
+6. Pseudoclases
+7. Psedoelementos
+
+## CSS: Sintaxis básica CSS (Tipos de selectores 2/3)
+
+<p>Selector de id</p>
+
+<p>Es de los elementos HTML que tienen atributo id con el valor especificado</p>
+
