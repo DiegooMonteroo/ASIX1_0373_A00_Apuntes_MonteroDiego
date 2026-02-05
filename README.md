@@ -632,6 +632,26 @@ Cada etiqueta HMTL, empiezan con <b>(< y acaba con >)</b>
             <button type="submit" name="enviar" value="enviar">Enviar datos</button>
         </form>
 ```
+### VALIDADOR DE CODIGO
+
+<p>Es una herramienta que se usa para revisar el codigo HTML,compruebe si hay errores en la estructura y si el codigo es el adecuado</p>
+
+<h3>Principales usos</h3>
+
+* Identificar etiquetas mal cerradas
+* Señalas erroes de estructura del documento
+* Detectar atributos incorrectos
+
+<hr>
+<h3>Para acceder a la Web</h3>
+<hr>
+
+<p>Debemos poner en Google W3C (validator.w3.org)</p>
+
+<p>Copiamos nuestro codigo o podemos subir el archivo HTML</p>
+
+<p>Se sube, se comprueba y se la comprobación final</p>
+
 ### INTRODUCCIÓN A CSS
 
 ## CSS: Evolución y función (1/2)
@@ -885,5 +905,49 @@ CSS
 
 <p>Selector de descendientes</p>
 
-<p>Solo seleccionan a elementos descendientes DIRECTOS</p>
+<p>Solo seleccionan a elementos descendientes DIRECTOS </p>
 
+## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 5/7)
+<p>Selectores de hermanos adyacentes</p>
+
+<p>Se puede seleccionar un elemento especifico después de otro elemento especifico al mismo nivel de la jerarquía del elemento</p>
+
+<p>Si se quisiera reducir el espacio vertical entre (h3) y (h4), sin afectar al segunfo (h4)</p>
+````html
+h1+h2 {
+    margin-top: -5mm;
+}
+```
+
+
+
+## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 6/7)
+
+<p>Psedoclases</p>
+
+<p>Sirven para definir estilos, para los diferentes estados de los elementos, uno que se usa mucho, es el del color del enlace</p>
+
+* <strong>:link</strong> Como se un enlace por primera vez
+* <strong>:visited</strong> Como se ve un enlace cuando ya se ha visitado
+* <strong>:focus</strong> Se coloca el cursos por encima del enlace
+* <strong>:hover</strong> El puntero del raton sobre ellos
+
+## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 7/7)
+
+<p>Psedoelementos</p>
+
+<p>Permiten añadir estilos a una parte en concreto del elemento</p>
+
+<p>Ej: Del pseudelemento <strong>::first-line</strong> se selecciona solo la primera línea del elemento que especifiquemos para el selector</p>
+
+````html
+p :: first-line {
+    color: green;
+}
+````
+
+## Google Fonts
+
+<P>Mediante Google Fonts, podemos añadir tipografías a nuestros diseños por el uso de tipografías online como las que ofre Google en su Web</P>
+
+<p>v</p>
