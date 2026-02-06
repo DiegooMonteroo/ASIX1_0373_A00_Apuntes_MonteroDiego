@@ -21,6 +21,17 @@
 
 ![alt text](./cap4.png "Imagen random de un archivo")
 
+<h3>Funcionamiento</h3>
+
+<p>Al haber hecho los pasos anteriores, sobre code un boton verde, vemos que hay una ruta de HTTPS</p>
+
+<P>Esa ruta hay que copiarla y colocar dentro sobre una ruta la cual queramos exportar nuestro contenido.</P>
+
+<p>Para ello, accedemos a una ruta la qual queremos exportarlo</p>
+<p>Ej: C:\Repositorios, una vez hemos entrado, abrimos un terminal y colocamos <strong>git clone</strong> y la ruta la cual copiamos anteriormente</p>
+
+<p>De manera que  contenido esta clonado</p>
+<hr>
 
 ### GIT
 
@@ -679,6 +690,7 @@ Cada etiqueta HMTL, empiezan con <b>(< y acaba con >)</b>
 <p>Para que HTML, no sea el responsable de la parte de la estética y la parte que se ve en la WEB, se penso en hacer hojas de estilo y el el lenguaje CSS (Cascading Style sheets)</p>
 
 <p>HTMl seria la estructura del documento, (un vínculo, un título ...) y el CSS da instrucciones al navegador sobre como ha de mostrar un elemento concreto:estilo, espaciado, posición</p>
+<hr>
 
 #### CSS: Ventajas e incovenientes
 
@@ -768,6 +780,8 @@ h1,h2, p {
 
 <p><strong>Herencia: </strong> hay propiedades que pueden heredarse, pero tienen menor prioridad que una regla aplicada directamente</p>
 
+<hr>
+
 ## CSS: Sintaxis básica CSS (Estructura 1/3)
 
 <p>Una hoja de estilos es el conjunto de reglas que definen la estética final, cada regla es formada por un selector y un conjunto de declaraciones</p>
@@ -775,6 +789,8 @@ h1,h2, p {
 <P>Cada declaración es formada por una propiedad y el valor asociado</P>
 
 <p>Los selectors los utilizamos para definir a qué elemento o elementos queremos aplicar las declaraciones de la regla</p>
+
+<hr>
 
 ## CSS: Sintaxis básica CSS (Comentarios)
 
@@ -787,6 +803,7 @@ selector {
     propiedad3: valor;
 }
 ```
+<hr>
 
 ## CSS: Sintaxis básica CSS (Tipos de selectores)
 
@@ -805,6 +822,8 @@ selector {
 5. Selectores de hermanos adyacentes
 6. Pseudoclases
 7. Psedoelementos
+
+<hr>
 
 ## CSS: Sintaxis básica CSS (Tipos de selectores 2/3)
 
@@ -828,6 +847,8 @@ selector {
 
 <p>Como bastantes elementos HTML, no pueden tener  como atributo  el mismo ID, ya que puede se equivoqué, para que todos mas o menos esten distinguidos usaremos <strong>"class"</strong></p>
 
+<hr>
+
 ## CSS: Sintaxis básica CSS (Tipos de selectores 3/3)
 
 <p>Selector de clase</p>
@@ -847,6 +868,7 @@ selector {
 <li class="example">
 <div class="example">
 ````
+<hr>
 
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 1/7)
 
@@ -859,6 +881,8 @@ selector {
     border: 1px solid #00000;
 }
 ```
+
+<hr>
 
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 2/7)
 
@@ -878,6 +902,7 @@ img {src="alert.gif"} {
     border: 1px solid #00000;
 }
 ```
+<hr>
 
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 3/7)
 
@@ -909,6 +934,7 @@ h1>strong {
     color: red;
 )
 ```
+<hr>
 
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 4/7)
 
@@ -933,6 +959,7 @@ h1+h2 {
     margin-top: -5mm;
 }
 ```
+<hr>
 
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 6/7)
 
@@ -944,6 +971,7 @@ h1+h2 {
 * <strong>:visited</strong> Enlaces que ya se han visitado con el navegador que se está utilizando.
 * <strong>:focus</strong> Enlaces (o campos de formularios, o cualquier otra cosa) que tienen en ese momento el cursor en su interior.
 * <strong>:hover</strong> Enlaces que tienen en ese momento el puntero del ratón sobre ellos.
+<hr>
 
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 7/7)
 
@@ -959,6 +987,8 @@ p::first-line {
 
 <p>En navegadores actuales que soportan CSS3, los dos puntos dobles están aceptados y ayudan a separar visualmente los pseudoelementos.</p>
 
+<hr>
+
 ## Google Fonts
 
 <P>Mediante Google Fonts, podemos añadir tipografías a nuestros diseños por el uso de tipografías online como las que ofre Google en su Web:</P> 
@@ -966,6 +996,7 @@ p::first-line {
 [Google Fonts](https://fonts.google.com/)
 
 <p>Seleccionamos la tipografía que queremos usar y accedemos a ella</p>
+<hr>
 
 ## Composición . Márgenes,bordes y relleno en CSS
 
@@ -974,6 +1005,7 @@ p::first-line {
 <p>Como en la mayoria de caso, las hojas de estilo predeterminadas en los navegadores no son las adecuadas</p>
 
 <p>Los especialistas en estilos, estan acostumbrados a usar a menudo los margénes <strong>(margin)</strong>,bordes <strong>(borde)</strong> y el relleno <strong>(padding)</strong>y otras propiedades de CSS.</p>
+<hr>
 
 ## Composición . Márgenes,bordes y relleno en CSS
 
@@ -996,6 +1028,8 @@ p::first-line {
 * porcentaje <strong>5px</strong>
 * automático <strong>auto</strong>
 
+<hr>
+
 ## Composición . Márgenes,bordes y relleno en CSS
 
 <p><strong>Relleno (padding)</strong></p>
@@ -1011,6 +1045,8 @@ p::first-line {
 
 <p>El valor del padding <strong>no puede ser nunca negativo </strong> y estilo padding <strong>es transparente</strong></p>
 
+<hr>
+
 ## COMPOSICIÓN. display: block
 
 <p>En CSS, la propiedad <strong>display</strong> determina cómo se comporta un elemento (bloque, inline, flex, grid, etc.). Por defecto tiene valor <strong>"block"</strong> y <strong>box-sizing</strong> es <strong>"content-box"</strong>.</p>
@@ -1023,9 +1059,10 @@ p::first-line {
   <section class="container">Esto es un botón</section>
 </body>
 ```
+<hr>
 
 ### COMPOSICIÓN. desordamiento (overflow)
-<hr>
+
 
 <p>Cuando el contenido de una caja sobresale de sus dimensiones <strong>(overflow)</strong>, por defecto tiene valor <strong>"visible"</strong>.</p>
 
@@ -1053,7 +1090,7 @@ body {
     margin:0;
 }
 ```
-
+<hr>
 
 ### COMPOSICIÓN. Desbordamiento (text-overflow)
 
@@ -1080,6 +1117,7 @@ body {
   margin: 0;
 }
 ```
+<hr>
 
 ### COMPOSICIÓN. viewport
 
@@ -1090,8 +1128,10 @@ body {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
-### COMPOSICIÓN. display: flex conceptos
 <hr>
+
+### COMPOSICIÓN. display: flex conceptos
+
 
 <p><strong>Flexbox</strong> utiliza tres elementos básicos para funcionar correctamente.</p>
 
@@ -1101,8 +1141,10 @@ body {
 
 <p><strong>Eje secundario:</strong> Orientación secundaria perpendicular a la principal. Si la principal es <strong>horizontal (en fila)</strong>, la secundaria será <strong>vertical (o viceversa)</strong>.</p>
 
-### COMPOSICIÓN. Media queries
 <hr>
+
+### COMPOSICIÓN. Media queries
+
 
 <p><strong>Media queries</strong> permiten aplicar estilos CSS diferentes según las características del dispositivo o ventana del navegador (ancho, altura, orientación, resolución).</p>
 
@@ -1110,8 +1152,9 @@ body {
 1. <strong>Detectan características del dispositivo.</strong> Por ejemplo, el ancho de la pantalla u orientación.
 2. <strong>Aplican estilos condicionales.</strong> Los estilos se activan solo si se cumple la condición especificada.
 
-### COMPOSICIÓN. Media queries: ejemplo
 <hr>
+
+### COMPOSICIÓN. Media queries: ejemplo
 
 <p><strong>Ejemplo práctico:</strong> Un sitio web que cambia el color de fondo según el tamaño de pantalla.</p>
 
