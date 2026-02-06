@@ -28,6 +28,26 @@
 
 <p><strong>Git:</strong> es un sistema de control de versiones distribuido capaz de gestionar versiones de código fuente o datos. lo que da quiere decir, un clon local del proyecto es un repositorio de control de versiones completo.</p>
 
+<hr>
+<h3>Desde donde se instala?</h3>
+
+<p>Primero se debe ir a <p>
+
+[git-scm.com](git-scm.com) , instalamos la ultima versión de Git y instalas la versión para Windows
+<p>
+
+<p>Al seguir la versión, le damos a Dowloan for Windows ya que la hemos elegido para Windows y después de eso seguimos los pasos de instalación</p>
+
+<hr>
+
+<h3>Donde se ejecuta?</h3>
+
+<p>Una vez lo tienes instalado, git se ejecuta en el CMD, lo que se debe hacer, es abrir en el terminal, la carpeta el cual tenemos el repositorio.</p>
+
+<p>Al abrirlo, debemos seguir una serie de comandos, para que el contenido de nuestro trabajo, pueda subirse</p>
+
+<hr>
+
 <p>Lo usamos, para subir los cambios que hemos realizado, en la prácticas de Git Hub</p>
 
 <p>Para ello, usamos distintos comandos</p>
@@ -39,6 +59,8 @@
 <p><strong>git commit -m (mensaje): </strong>Registra los cambios añadidos con un mensaje descriptivo</p>
 
 <p><strong>git push origin: </strong>Envía los commits locales al repositorio remoto en la rama </p>
+
+<hr>
 
 
 ![alt text](./cap5.png "Imagen random de un archivo")
@@ -63,14 +85,18 @@
 ## Estilos de letra
 
 ### Negrita
+<p>Los usamos para darle formato visual al texto</p>
+
 Esto esta en  __negrita__
 Esto esta en **negrita** también
 
 ### Cursiva
+<p>Así mismo, con la letra en cursiva</p>
 Esto esta en _cursiva_
 Esto esta en *cursiva*
 
 ### Tachado
+<p>Para poner letra que esten tachadas</p>
 ~~palabra~~
 
 ### Anidar estilos
@@ -80,7 +106,7 @@ Esto esta en *cursiva*
 **_*TEXTO**
 
 ## Lista ordenada 
-
+<p>Para hacer listas ordenadas</p>
 1. Elemento 1
 * Elemento desordenado 1.1 
 * Elemento desordenado 1.2
@@ -90,38 +116,30 @@ Esto esta en *cursiva*
 3. Elemento 3
 
 ## Lista desordenada
-
+<p>Para hacer listas desordenadas</p>
 * Elemento desordenado 1
 * Elemento desordenado 2
 * Elemento desordenado 3
 
-## Texto random
-
-grgrgrgrgryghrgrhgyhrgyrhgyryhghrhygryhghrh
-grgrgrggggggggggggggggggggggggggggggggggggggg
-grrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrgrrrr
-
-grgrrrrrragaghufyegfyregyergyergyr
-rgqrgrghrghryghryghrygruhg
-grgrrrrrrrrrrrrrr
 
 ## Parrafo
+<p>Para imprimir un parrafo</p>
 ```html
 <p>esto es un parrafo</p>
 ```
 
 ## Enlace
-[link](https://www.wwe.com/ "Manal oficial de WWE")
-a) Primero se incluye el texto del link entre corchetes y posteriormente el link en paréntesis
+<p>Para hacer un enlace</p>
 
-b) El "titulo opcional del enlace " es el texto alternativo al pasar el ratón por encima
+[link](https://www.wwe.com/ "Manal oficial de WWE")
 
 ## Foto
-
+<p>Para colocar una imagen</p>
 
 ![alt text](./the.jpeg "Imagen random de un archivo")
 
 ## Tabla
+<p>Para crear un tabla</p>
 
 La primera línea son los encabezados de las columnas<br>
 Los dos puntos (ver en linea 2) se usan para alinear las columnas (izquierda, centrado,derecha)<br>
@@ -139,6 +157,8 @@ Se han de poner al menos tres guiones para separar cada enzabezado
 Texto con enlace a nota de pie de página [^1]
 
 ## Listas de verificación
+<p>Para las listas de verificación</p>
+
 - [] A
 - [x] B
 - [] C
@@ -1086,7 +1106,6 @@ body {
 
 <p><strong>Media queries</strong> permiten aplicar estilos CSS diferentes según las características del dispositivo o ventana del navegador (ancho, altura, orientación, resolución).</p>
 
-<p><strong>¿Cómo funcionan?</strong></p>
 
 1. <strong>Detectan características del dispositivo.</strong> Por ejemplo, el ancho de la pantalla u orientación.
 2. <strong>Aplican estilos condicionales.</strong> Los estilos se activan solo si se cumple la condición especificada.
