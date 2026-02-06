@@ -711,9 +711,11 @@ Cada etiqueta HMTL, empiezan con <b>(< y acaba con >)</b>
 <body>
 </body>
 </html>
+````
 
 <h1>Hoja externa de selectores</h1>
 
+```css
 p{
     color: red !important;
     font-size: 25px;
@@ -723,10 +725,10 @@ span{
 }
 h1,h2, p {
     color: red;
-    
 }
-````
-## CSS: Prioridad (1/4)
+```
+
+### CSS: Prioridad (1/4)
 <p>Puede que varias declaraciones CSS lleguen a afectar de forma diferente a un mismo elemento HTML, por eso cada una tiene preferencia</p>
 
 <p><strong>Lo primero, </strong>es comprobar si existe una hoja de estilos externa asociada al documento HTML (estilo interno)</p> 
@@ -758,14 +760,14 @@ h1,h2, p {
 
 <p>Como tambien en HTML, en CSS podemos aplicar comentarios, CSS solo tiene comentarios de bloque</p>
 
-````html
-/* Estos son selectores de elementos básicos */
+```css
 selector {
     propiedad1: valor;
     propiedad2: valor;
     propiedad3: valor;
 }
-````
+```
+
 ## CSS: Sintaxis básica CSS (Tipos de selectores)
 
 <p>Hay distintos tipos de selectores. Los más básicos son:</p>
@@ -790,7 +792,7 @@ selector {
 
 <p>Es de los elementos HTML que tienen atributo id con el valor especificado</p>
 
-````html
+````css
 #example {
     propiedad1: valor;
     propiedad2: valor2;
@@ -812,12 +814,12 @@ selector {
 
 <p>Estara asociado a todos los elementos que tengan como atributo class con el valor específicado.Por ejemplo el selector:</p>
 
-````html
+```css
 #example {
     propiedad1: valor;
     propiedad2: valor2;
 }
-````
+```
 <p>Afectara a todos los elementos que contengan el atributo class con el valor especificado</p>
 
 ````html
@@ -825,23 +827,6 @@ selector {
 <li class="example">
 <div class="example">
 ````
-## CSS: Sintaxis básica CSS (Tipos de selectores)
-
-<p>Hay distintos tipos de selectores. Los más básicos son:</p>
-
-1. Selector de elementos (selector de tipo)
-2. Selector de id 
-3. Selector de clase
-
-<p>Selectores avanzados</p>
-
-1. Selector universal
-2. Selector de atributos
-3. Selector de hijos
-4. Selectores de descendientes
-5. Selectores de hermanos adyacentes
-6. Pseudoclases
-7. Psedoelementos
 
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 1/7)
 
@@ -849,29 +834,31 @@ selector {
 
 <p>Se usa para seleccionar todos los elementos de la página</p>
 
-````html
+```css
 * {
     border: 1px solid #00000;
 }
-````
+```
+
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 2/7)
 
 <p>Selector atributos</p>
 
 <p>Nos permite poder seleccionar elementos en función de los atributos que contienen, aquí afectara a todos los elementos <strong>img</strong>con atributo "alt"</p>
 
-````html
+```css
 img {alt} {
     border: 1px solid #00000;
 }
 ````
 <p>Es más útil si se especifica el valor del atributo:</p>
 
-````html
+```css
 img {src="alert.gif"} {
     border: 1px solid #00000;
 }
-````
+```
+
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 3/7)
 
 <p>Selector de hijos</p>
@@ -879,28 +866,30 @@ img {src="alert.gif"} {
 <p> Su función es seleccionar elementos que son hijos directos de otros elementos concretos.</p>
 <p>Por ejemplo, <strong>strong</strong> es de hijo de <strong>h1</strong> pero no de los demás elementos</p>
 
-````html
+```css
 h1>strong {
     color: green;
 }
-````
+```
 
 <p>Además se puede aplicar estilo directamente al hijo que queramos, colocando el número (orden) del hijo al cual queramos afectar</p>
 
 <p>Aquí se usara al tercer hijo, usando la pseudocase :nth-child(orden):</p>
 
-````html
+```html
 <div class="parent">
     <p>Primer hijo</p>
     <div>Segundo hijo</div>
     <span>Tercer hijo</span>
 </div>
+```
 
-CSS
+```css
 .parent :nth-child(3) (
     color: red;
 )
-````
+```
+
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 4/7)
 
 <p>Selector de descendientes</p>
