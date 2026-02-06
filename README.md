@@ -908,46 +908,205 @@ CSS
 <p>Solo seleccionan a elementos descendientes DIRECTOS </p>
 
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 5/7)
-<p>Selectores de hermanos adyacentes</p>
 
-<p>Se puede seleccionar un elemento especifico después de otro elemento especifico al mismo nivel de la jerarquía del elemento</p>
+<p><strong>Selectores de hermanos adyacentes</strong></p>
 
-<p>Si se quisiera reducir el espacio vertical entre (h3) y (h4), sin afectar al segunfo (h4)</p>
-````html
+<p>Permiten seleccionar un elemento concreto que aparece DIRECTAMENTE DESPUÉS de otro elemento concreto al mismo nivel de la jerarquía del elemento.</p>
+
+```html
+<h1>Encabezado 1 </h1>
+<h2>Encabezado 2 (hermano adyacente) </h2>
+<h2>Encabezado 2 (hermano no adyacente) </h2>
+```
+
+```css
 h1+h2 {
     margin-top: -5mm;
 }
 ```
 
-
-
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 6/7)
 
-<p>Psedoclases</p>
+<p><strong>Pseudoclases</strong></p>
 
-<p>Sirven para definir estilos, para los diferentes estados de los elementos, uno que se usa mucho, es el del color del enlace</p>
+<p>Se utilizan para definir estilos de los diversos estados de los elementos. Uno de los usos más habituales es aplicar estilos a los estados de los enlaces. Las siguientes pseudoclases especifican los diferentes estados:</p>
 
-* <strong>:link</strong> Como se un enlace por primera vez
-* <strong>:visited</strong> Como se ve un enlace cuando ya se ha visitado
-* <strong>:focus</strong> Se coloca el cursos por encima del enlace
-* <strong>:hover</strong> El puntero del raton sobre ellos
+* <strong>:link</strong> El estado normal por defecto de los enlaces. Tal y como se ven por primera vez.
+* <strong>:visited</strong> Enlaces que ya se han visitado con el navegador que se está utilizando.
+* <strong>:focus</strong> Enlaces (o campos de formularios, o cualquier otra cosa) que tienen en ese momento el cursor en su interior.
+* <strong>:hover</strong> Enlaces que tienen en ese momento el puntero del ratón sobre ellos.
 
 ## CSS: Sintaxis básica CSS (Tipos de selectores avanzados 7/7)
 
-<p>Psedoelementos</p>
+<p><strong>Pseudoelementos</strong></p>
 
-<p>Permiten añadir estilos a una parte en concreto del elemento</p>
+<p>Al igual que las pseudoclases, no afectan a todo el elemento sino que permiten añadir estilos a UNA PARTE CONCRETA del elemento. Por ejemplo, <strong>::first-line</strong> selecciona solo la primera línea.</p>
 
-<p>Ej: Del pseudelemento <strong>::first-line</strong> se selecciona solo la primera línea del elemento que especifiquemos para el selector</p>
-
-````html
-p :: first-line {
-    color: green;
+```css
+p::first-line {
+    color: red;
 }
-````
+```
+
+<p>En navegadores actuales que soportan CSS3, los dos puntos dobles están aceptados y ayudan a separar visualmente los pseudoelementos.</p>
 
 ## Google Fonts
 
-<P>Mediante Google Fonts, podemos añadir tipografías a nuestros diseños por el uso de tipografías online como las que ofre Google en su Web</P>
+<P>Mediante Google Fonts, podemos añadir tipografías a nuestros diseños por el uso de tipografías online como las que ofre Google en su Web:</P> 
 
-<p>v</p>
+[Google Fonts](https://fonts.google.com/)
+
+<p>Seleccionamos la tipografía que queremos usar y accedemos a ella</p>
+
+## Composición . Márgenes,bordes y relleno en CSS
+
+<p>Gran parte de los elementos HTML, se representan por defecto ocupando todo el ancho del navegador y forzando el salto de linea al final</p>
+
+<p>Como en la mayoria de caso, las hojas de estilo predeterminadas en los navegadores no son las adecuadas</p>
+
+<p>Los especialistas en estilos, estan acostumbrados a usar a menudo los margénes <strong>(margin)</strong>,bordes <strong>(borde)</strong> y el relleno <strong>(padding)</strong>y otras propiedades de CSS.</p>
+
+## Composición . Márgenes,bordes y relleno en CSS
+
+<p><strong>Margen (margin)</strong></p>
+
+<p>Es el area transparente que rodea la caja, aquel espacio que la separará de los elementos contiguos</p>
+
+<p>Esta propiedad se puede desplegar a la vez e 4 propiedades además el valor "margin" como propiedad global</p>
+
+* <strong>margin-top</strong> (margen superior )
+* <strong>margin-right</strong> (margen derecho)
+* <strong>margin-bottom</strong> (margen inferior)
+* <strong>margin-left</strong> (margen izquiero)
+
+<p>El valor puede ser:</p>
+
+* pixeles: <strong>2px</strong>
+* referencia del valor font-size <strong>1rem</strong>
+* referencia del valor font-size (html) <strong>1rem</strong>
+* porcentaje <strong>5px</strong>
+* automático <strong>auto</strong>
+
+## Composición . Márgenes,bordes y relleno en CSS
+
+<p><strong>Relleno (padding)</strong></p>
+
+<p>Es el aquel espacio entre el borde del elemento y su contenido </p>
+
+<p>Esta propiedad se puede desplegar a la vez e 4 propiedades además el valor "padding"</p>
+
+* <strong>padding-top</strong> 
+* <strong>padding-right</strong> 
+* <strong>padding-bottom</strong> 
+* <strong>padding-left</strong> 
+
+<p>El valor del padding <strong>no puede ser nunca negativo </strong> y estilo padding <strong>es transparente</strong></p>
+
+## COMPOSICIÓN. display: block
+
+<p>En CSS, la propiedad <strong>display</strong> determina cómo se comporta un elemento (bloque, inline, flex, grid, etc.). Por defecto tiene valor <strong>"block"</strong> y <strong>box-sizing</strong> es <strong>"content-box"</strong>.</p>
+
+<p>Para evitar conflictos con el diseño, usamos <strong>box-sizing: border-box</strong> para que no se cuenten el margen y padding.</p>
+
+
+```html
+<body>
+  <section class="container">Esto es un botón</section>
+</body>
+```
+
+### COMPOSICIÓN. desordamiento (overflow)
+<hr>
+
+<p>Cuando el contenido de una caja sobresale de sus dimensiones <strong>(overflow)</strong>, por defecto tiene valor <strong>"visible"</strong>.</p>
+
+* <strong>overflow: hidden:</strong> Oculta el contenido que desborda.
+* <strong>overflow: scroll:</strong> Añade barras de navegación.
+* <strong>overflow: auto:</strong> Muestra barras solo si es necesario según el navegador.
+
+```html
+<body>
+  <section class="container">Esto es un botón</section>
+</body>
+```
+
+```css
+.container {
+    width: 100px;
+    height: 150px;
+    background: #FFFFFF;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 48px;
+}
+body {
+    background: #0000FF;
+    margin:0;
+}
+```
+
+
+### COMPOSICIÓN. Desbordamiento (text-overflow)
+
+<p>La propiedad <strong>overflow</strong> con valor <strong>"hidden"</strong> oculta el contenido que se desborda. Con la propiedad <strong>text-overflow</strong> podemos controlar cómo se muestra ese texto oculto.</p>
+
+* <strong>text-overflow: clip:</strong> Recorta el texto sin indicación.
+* <strong>text-overflow: ellipsis:</strong> Corta el texto y añade puntos suspensivos (...) indicando que hay más contenido.
+
+
+```css
+.container {
+  width: 150px;
+  height: 150px;
+  background: #FFFFFF;
+  padding: 10px;
+  border: 2px solid #FF0000;
+  font-size: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body {
+  background: #000000;
+  margin: 0;
+}
+```
+
+### COMPOSICIÓN. viewport
+
+<p>La meta-etiqueta <strong>viewport</strong> es necesaria en el <strong>&lt;head&gt;</strong> del documento HTML para indicar que el ancho de la web sea el de la resolución de la pantalla y que no se escale automáticamente.</p>
+
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+### COMPOSICIÓN. display: flex conceptos
+<hr>
+
+<p><strong>Flexbox</strong> utiliza tres elementos básicos para funcionar correctamente.</p>
+
+<p><strong>Contenedor:</strong> Elemento padre que contiene los ítems flexibles. Observa que, al contrario de muchas estructuras CSS, las propiedades se establecen en el elemento padre.</p>
+
+<p><strong>Eje principal:</strong> Los contenedores flexibles tienen una orientación principal específica. Por defecto, el eje principal del contenedor flex es <strong>horizontal (en fila)</strong>.</p>
+
+<p><strong>Eje secundario:</strong> Orientación secundaria perpendicular a la principal. Si la principal es <strong>horizontal (en fila)</strong>, la secundaria será <strong>vertical (o viceversa)</strong>.</p>
+
+### COMPOSICIÓN. Media queries
+<hr>
+
+<p><strong>Media queries</strong> permiten aplicar estilos CSS diferentes según las características del dispositivo o ventana del navegador (ancho, altura, orientación, resolución).</p>
+
+<p><strong>¿Cómo funcionan?</strong></p>
+
+1. <strong>Detectan características del dispositivo.</strong> Por ejemplo, el ancho de la pantalla u orientación.
+2. <strong>Aplican estilos condicionales.</strong> Los estilos se activan solo si se cumple la condición especificada.
+
+### COMPOSICIÓN. Media queries: ejemplo
+<hr>
+
+<p><strong>Ejemplo práctico:</strong> Un sitio web que cambia el color de fondo según el tamaño de pantalla.</p>
+
+* <strong>Pantallas grandes (escritorio):</strong> El fondo será azul.
+* <strong>Pantallas medianas (tablets):</strong> El fondo será verde.
+* <strong>Pantallas pequeñas (teléfonos):</strong> El fondo será amarillo.
